@@ -1,0 +1,275 @@
+---
+layout: 'base.njk'
+section: page
+pagination:
+    data: pdv
+    size: 1
+    alias: pdv
+permalink: "{{ pdv.codec }}/"
+---
+<div style="
+    overflow: hidden;
+">
+<header class="page-container">
+  <div class="col">
+    <h3>{{ pdv.ville | lower }}</h3>
+  </div>
+  <div class="col">
+    {{ global.logo | svg | safe }}
+  </div>
+  <div class="col">
+    <a href="{{ pdv.site }}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Je profite de l'offre</a>
+  </div>
+</header>
+<section class="intro page-container">
+      {% image
+        "src/assets/img/bg-intro.jpg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "bg-intro",
+        "eager"
+      %}
+      <div class="girl">
+      {% image
+        "src/assets/img/girl.png",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+      </div>
+      <div class="shad">
+      {% image
+        "src/assets/img/shadow.png",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+      </div>
+      <div class="mask">
+              {% image
+        "src/assets/img/mask.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+      </div>
+      <div class="col-intro">
+
+        <div class="junior">
+          <div class="top">
+        {% image
+        "src/assets/img/II.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+          </div>
+      <div class="bot">
+                {% image
+        "src/assets/img/J.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+                      {% image
+        "src/assets/img/U.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+                      {% image
+        "src/assets/img/N.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+                      {% image
+        "src/assets/img/i.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+                      {% image
+        "src/assets/img/O.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+                      {% image
+        "src/assets/img/R.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+      </div>
+        </div>
+<div class="letters">
+
+<span class="l10">L</span><span class="l8">e</span> <span class="l6">pa</span><span class="l4">c</span><span class="l2">k</span><br>
+<span class="l1">P</span><span class="l2">r</span><span class="l3">o</span><span class="l4">t</span><span class="l5">e</span><span class="l6">c</span><span class="l7">t</span><span class="l8">i</span><span class="l9">o</span><span class="l10">n</span>
+</div></div>
+</section>
+<section class="page-container arg">
+  <div class="date">du <span>27 juin</span> au <span>30 septembre 2023</span>, en magasin</div>
+  <div class="boxs">
+    <div class="box">
+      <div class="col">
+        Une paire optique achetée<br>
+        <span>d'une monture minimum de 150€</span>
+      </div>
+      <div class="col">
+        <div class="math"><span>+</span></div>
+      </div>
+      <div class="col">
+        30€
+      </div>
+    </div>
+    <div class="box">
+      <div class="math">=</div>
+    </div>
+    <div class="box">
+      <div class="col">
+        <span>2<sup>e</sup></span> paire
+      </div>
+      <div class="col">
+        anti-lumière bleue
+      </div>
+    </div>
+    <div class="box">
+      <div class="math">+</div>
+    </div>
+    <div class="box">
+      <div class="col">
+        <span>3<sup>e</sup></span> paire
+      </div>
+      <div class="col">
+        solaire à la vue
+      </div>
+    </div> 
+    
+  </div>
+</section>
+<section class="page-container redac">
+<div class="cols">
+  <div class="col">
+      {% image
+        "src/assets/img/redac01.jpg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+  </div>
+  <div class="col">
+    <h2>Junior le pack protection</h2>
+    <p>Votre enfant vit des journées bien remplies : lecture, jeux vidéos, sport… et sollicite sa vue en permanence. Pour protéger ses yeux, bénéficiez des conseils de votre opticien et choisissez des lunettes adaptées à ses activités avec le pack protection Junior</p>
+  </div>
+</div>
+<div class="cols">
+  <div class="col">
+    {% image
+        "src/assets/img/redac02.jpg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+  </div>
+  <div class="col">
+    <h2>1, 2, 3 paires de lunettes</h2>
+    <p>La vue des enfants se développe et évolue jusqu’à l’adolescence. Leurs yeux sont aussi plus sensibles que ceux des adultes et il est indispensable de les préserver. Le pack protection Junior, c’est une 2e paire avec traitement anti-lumière bleue pour protéger leurs yeux de la lumière bleue nocive des écrans et une 3e paire solaire à la vue pour protéger leurs yeux des rayons UV du soleil.<br>De quoi être bien équipée et profiter encore plus de leurs journées ! </p>
+  </div>
+</div>
+<div class="frame">
+  <div class="col">
+{% image
+        "src/assets/img/light.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+  </div>
+  <div class="col">
+    <h2>Le saviez-vous ?</h2>
+    <p><b>De 0 à 8 ans</b>, la vue est en plein développement. Il est essentiel que les lunettes soient bien portées en privilégiant l'ergonomie de la monture.</p>
+    <p><b>A partir de 5 ans</b>, un défaut de vision peut avoir des répercussions sur les apprentissages scolaires. Il est donc primordial que votre enfant aime porter ses lunettes. Et comme nous ne laissons rien au hasard, le soin apporté à l’aspect esthétique est aussi important que l’ergonomie de nos montures.</p>
+  </div>
+</div>
+</section>
+<footer class="page-container">
+   <div class="mask">
+              {% image
+        "src/assets/img/mask2.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+      </div>
+<h2>Je découvre cette offre dans mon magasin Optic 2000 <span>{{ pdv.ville | lower }}</span></h2>
+<div class="col">
+  <iframe
+  width="100%"
+  height="500"
+  frameborder="0" style="border:0"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDOtO8roa8KKg1ZsqGxxH5cG_lS5NV-XG8&q=Optic+2000+{{ pdv.adress }}+{{ pdv.cp }}+{{ pdv.ville }}"
+  allowfullscreen>
+</iframe>
+</div>
+<div class="col">
+  <p>{{ pdv.adress }}<br>{{ pdv.cp }} {{ pdv.ville }}</p>
+  <a href="https://www.facebook.com/{{ pdv.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+  <a href="{{ pdv.site }}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Je profite de l'offre</a>
+</div>
+<p class="legal">
+ <b>Mentions légales</b> :<br>
+* Pour l’achat d’un équipement optique complet, compose d’une monture équipée de verres unifocaux avec traitements antireflets d’un montant total minimal de 150€, bénéficiez simultanément pour trente euros de plus du ≪ Pack protection junior ≫, compose d’une 2e paire optique équipée de verres standard blancs, non amincis, avec protection lumière bleue et d’une 3e paire solaire à la vue de votre enfant, équipée de verres standard teintes
+(non durcis, non antireflets et non amincis). Les 2e et 3e paires doivent être composées d’une monture à choisir dans les collections Tango et Baila et de deux verres correcteurs de même correction que la première paire. Offre valable jusqu’au 30/09/2023 inclus, pour les personnes âgées de 2 à 17 ans maximum et applicable pour les corrections suivantes (-8.00 ; +6.00 cyl 4 ; S+C ≤ 6). Offre non cumulable avec d’autres offres et avantages. Photo
+retouchée. Les montures et verres correcteurs constituent des dispositifs médicaux qui sont des produits de santé réglementés, revêtus du marquage CE sur les produits ou le document d’accompagnement, conformément à la réglementation. 
+Demandez conseil à votre opticien. Mai 2023. SIREN 326 980 018 - RCS Nanterre.
+</p>
+<div class="logo-bot">
+    {{ global.logo | svg | safe }}
+  </div>
+</footer>
+
+<script>
+  window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements(".girl", {
+        scrollY: {
+        translateX: [["0", "pageWidth"], [-100, "pageWidth-150"]],
+        translateY: [["0", "200"], [0, "50"]],
+        scale: [["0", "200"], [".95", "1.15"]],
+        }
+      });
+    lax.addElements(".shad", {
+        scrollY: {
+        translateX: [["0", "pageWidth"], [-100, "pageWidth-150"]],
+        translateY: [["0", "200"], [0, "50"]],
+        scale: [["0", "200"], [".95", "1.15"]],
+        }
+      });
+    
+  }
+</script>
+</div>

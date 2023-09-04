@@ -18,3 +18,18 @@
 @use 'components/site-header.scss';
 @use 'components/site-footer.scss';
 @use 'components/drawer.scss';
+
+/* Fonts */
+
+@font-face {
+    font-family: 'antarctica';
+    src: url('../fonts/antarctica.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/antarctica.ttf')  format('truetype');
+         font-display:auto;font-style:normal;font-stretch:normal; /* Safari, Android, iOS */
+  }
+  @font-face {
+    font-family: 'pangea';
+    src: url('../fonts/pangea.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pangea.ttf')  format('truetype');
+         font-display:auto;font-style:normal;font-stretch:normal; /* Safari, Android, iOS */
+  }

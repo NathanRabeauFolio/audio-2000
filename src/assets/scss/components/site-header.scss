@@ -3,10 +3,6 @@
   width: 100%;
   border-top: 3px solid var(--color-secondary);
   z-index: var(--z-header);
-
-  :root[data-theme="dark"] & {
-    border-color: var(--color-bg-accent-dark);
-  }
 }
 
 .site-header__container {
@@ -24,10 +20,6 @@
   @media (min-width: 1024px) {
     max-width: var(--site-width);
     margin: 3px auto 0;
-  }
-
-  :root[data-theme="dark"] & {
-    background-color: var(--color-bg-secondary-dark);
   }
 }
 
@@ -55,15 +47,6 @@
     border-bottom: none;
     background-color: var(--color-bg-secondary);
     color: var(--color-secondary);
-
-    :root[data-theme="dark"] & {
-      background-color: var(--color-bg-wrapper-bg-dark);
-      color: var(--color-title-dark);
-    }
-  }
-
-  :root[data-theme="dark"] & {
-    color: var(--color-title-dark);
   }
 }
 
@@ -98,11 +81,6 @@
 
   @media (min-width: 1024px) {
     display: none;
-  }
-
-  :root[data-theme="dark"] & {
-    color: var(--color-text-dark);
-    background-color: var(--color-bg-secondary-dark);
   }
 }
 
@@ -142,33 +120,10 @@
     border-bottom: none;
     background-color: var(--color-bg-secondary);
     color: var(--color-secondary);
-
-    :root[data-theme="dark"] & {
-      background-color: var(--color-bg-wrapper-bg-dark);
-      color: var(--color-title-dark);
-    }
   }
 
   &[aria-current] {
     background-color: var(--color-bg-secondary);
     color: var(--color-secondary);
-
-    :root[data-theme="dark"] & {
-      background-color: var(--color-bg-wrapper-bg-dark);
-      color: var(--color-title-dark);
-    }
-  }
-
-  :root[data-theme="dark"] & {
-    color: var(--color-title-dark);
-  }
-
-  &--theme-switch {
-    border: none;
-    background: none;
-
-    :root[data-theme="dark"] & {
-      background: none;
-    }
   }
 }

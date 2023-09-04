@@ -26,10 +26,6 @@
     border-radius: var(--border-radius);
     background-color: var(--color-bg-accent);
     z-index: -1;
-
-    :root[data-theme="dark"] & {
-      background-color: var(--color-bg-accent-dark);
-    }
   }
 }
 
@@ -55,8 +51,6 @@
 }
 
 .hero__image {
-  max-width: 300px;
-  border-radius: var(--border-radius);
   transition: filter 0.4s ease-out;
 
   @media (min-width: 1024px) {
@@ -89,10 +83,6 @@
   margin-bottom: 20px;
   padding-top: 20px;
   border-top: 2px solid (var(--color-border));
-
-  :root[data-theme="dark"] & {
-    border-top: 1px solid (var(--color-border-dark));
-  }
 }
 
 .list-header__title {

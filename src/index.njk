@@ -1,46 +1,130 @@
 ---
-layout: base.njk
-section: home
+layout: 'base.njk'
+section: page
 ---
-<div class="home-page">
-	<div class="home-page__bg-square"></div>
+<header class="page-container">
+  <div class="col">
+    <h3>Centre AUDIO 2000 – Audition RAMEAU<br>110 bis Rue Ordener, 75018 PARIS
+</h3>
+  </div>
+  <div class="col">
+    {{ global.logo | svg | safe }}
+  </div>
+  <div class="col">
+    <a href="https://www.audio2000.fr/audioprothesiste-paris18/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> prendre rendez-vous en centre</a>
+  </div>
+</header>
+<section class="intro page-container">
 
-  {# Hero #}
-  <div class="hero">
-    <div class="hero__col">
-      <h1 class="hero__title gradient-text">{{ home.title }}</h1>
-      {% if home.body %}
-        <div class="hero__body">{{ home.body | markdown | safe }}</div>
-      {% endif %}
-    </div>
-    <div class="hero__col">
-      {% image
-        home.image,
-        home.image_alt,
+      <div class="mask">
+              {% image
+        "src/assets/img/mask.svg",
+        "",
         "(min-width: 1024px) 50vw, 100vw",
-        "hero__image shadow",
+        "",
         "eager"
       %}
-    </div>
+      </div>
+        <div class="col-intro">
+    {{ global.logo | svg | safe }}
   </div>
+      <div class="col-intro">
+<div class="letters">
+<span class="l3">P</span><span class="l1">o</span><span class="l2">u</span><span class="l4">r</span><br>
+<span class="l4">T</span><span class="l2">o</span><span class="l1">u</span><span class="l3">s</span>
+</div>
+</div>
+        <div class="col-intro">
+              {% image
+        "src/assets/img/SANTE-LOGO.png",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        ""
+      %}
+  </div>
+</section>
+<section class="page-container arg">
+  <div class="date"><span>Vous avez un doute sur votre audition ?</span><br>
+  Votre audioprothésiste Audio 2000 vous propose un bilan auditif gratuit(1) et sans engagement pour faire une première évaluation de votre audition.
+</div>
+</section>
+<section class="page-container redac">
+<div class="cols">
+  <div class="col">
+      {% image
+        "src/assets/img/redac01.jpg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+  </div>
+  <div class="col">
+    <h2>Junior le pack protection</h2>
+    <p>Votre enfant vit des journées bien remplies : lecture, jeux vidéos, sport… et sollicite sa vue en permanence. Pour protéger ses yeux, bénéficiez des conseils de votre opticien et choisissez des lunettes adaptées à ses activités avec le pack protection Junior</p>
+  </div>
+</div>
 
-  {# Projects #}
-  <div class="list-header">
-    <h2 class="list-header__title">Projects</h2>
-    <a class="btn btn--outline btn--sm" href="/projects">View All</a>
+</section>
+<footer class="page-container">
+   <div class="mask">
+              {% image
+        "src/assets/img/mask2.svg",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "",
+        "eager"
+      %}
+      </div>
+<h2>Votre centre AUDIO 2000 et votre audioprothésiste<br>sont prêts à vous accueillir pour un rendez-vous audition :</h2>
+<div class="col">
+  <iframe>
+  
+</iframe>
+</div>
+<div class="col">
+  <p></p>
+  <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+  <a href=""><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Je profite de l'offre</a>
+</div>
+<p class="legal">
+ <b>Mentions légales</b> :<br>
+* Pour l’achat d’un équipement optique complet, compose d’une monture équipée de verres unifocaux avec traitements antireflets d’un montant total minimal de 150€, bénéficiez simultanément pour trente euros de plus du ≪ Pack protection junior ≫, compose d’une 2e paire optique équipée de verres standard blancs, non amincis, avec protection lumière bleue et d’une 3e paire solaire à la vue de votre enfant, équipée de verres standard teintes
+(non durcis, non antireflets et non amincis). Les 2e et 3e paires doivent être composées d’une monture à choisir dans les collections Tango et Baila et de deux verres correcteurs de même correction que la première paire. Offre valable jusqu’au 30/09/2023 inclus, pour les personnes âgées de 2 à 17 ans maximum et applicable pour les corrections suivantes (-8.00 ; +6.00 cyl 4 ; S+C ≤ 6). Offre non cumulable avec d’autres offres et avantages. Photo
+retouchée. Les montures et verres correcteurs constituent des dispositifs médicaux qui sont des produits de santé réglementés, revêtus du marquage CE sur les produits ou le document d’accompagnement, conformément à la réglementation. 
+Demandez conseil à votre opticien. Mai 2023. SIREN 326 980 018 - RCS Nanterre.
+</p>
+<div class="logo-bot">
+    {{ global.logo | svg | safe }}
   </div>
-  {% from "macros/projectlist.njk" import projectlist %}
-  {{ projectlist(projects = collections.project | reverse) }}
+</footer>
 
-  {# Articles #}
-  <div class="list-header">
-    <h2 class="list-header__title">Articles</h2>
-    <a class="btn btn--outline btn--sm" href="/blog">View All</a>
-  </div>
-  {% from "macros/articlelist.njk" import articlelist %}
-  {{ articlelist(
-    articles = collections.post | reverse,
-    show_tags = false,
-    limit = 3
-  ) }}
+<script>
+  window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements(".girl", {
+        scrollY: {
+        translateX: [["0", "pageWidth"], [-100, "pageWidth-150"]],
+        translateY: [["0", "200"], [0, "50"]],
+        scale: [["0", "200"], [".95", "1.15"]],
+        }
+      });
+    lax.addElements(".shad", {
+        scrollY: {
+        translateX: [["0", "pageWidth"], [-100, "pageWidth-150"]],
+        translateY: [["0", "200"], [0, "50"]],
+        scale: [["0", "200"], [".95", "1.15"]],
+        }
+      });
+    
+  }
+</script>
 </div>
