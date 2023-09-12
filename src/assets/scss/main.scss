@@ -73,3 +73,22 @@
      font-style: normal;
      font-display: swap;
  }
+
+
+ @font-face {
+    font-display:auto;
+    font-family:'Antarctica Beta VAR';
+    font-stretch:normal;
+    font-style:normal;
+    src:url(https://optic2000-kids.com/assets/fonts/antarctica.woff2) format("woff2"),
+    url(https://optic2000-kids.com/assets/fonts/antarctica.ttf) format("truetype")
+  }
+  @font-face {
+    font-display:auto;
+    font-family:'Pangea VAR 2.000';
+    font-stretch:normal;
+    font-style:normal;
+    src:url(https://optic2000-kids.com/assets/fonts/pangea.woff2) format("woff2"),
+    url(https://optic2000-kids.com/assets/fonts/pangea.ttf) format("truetype")
+  }
+  
