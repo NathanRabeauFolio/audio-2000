@@ -27,7 +27,7 @@ body {
     content: '';
     width: 100%;
     height: 80vh;
-    background-color: #111720;
+    background-color: #35465e;
     position: absolute;
     left: 0;
     top: 0;
@@ -35,15 +35,16 @@ body {
   }
 }
 header {
-  background-color: #111720;
+  background-color: #35465e;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 3rem 0rem;
       @media (min-width: 1024px) {
-         padding: 5rem 0;
+         padding: 5rem 0 0rem;
       }
+
   .col {
     width:100%;
     display: flex;
@@ -75,7 +76,7 @@ header {
     color: white;
     font-size: 1em;
     text-align: center;
-    font-family: 'pangea';
+    font-family: 'Pangea VAR 2.000';
     font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 0, "SS02" 0, "SS03" 0;
     text-transform: capitalize;
     @media (min-width: 1024px) {
@@ -85,10 +86,10 @@ header {
   }
   a {
     position: relative;
-    color:#111720!important;
+    color:#35465e!important;
     z-index: 1;
     text-align: center;
-    font-family: 'pangea';
+    font-family: 'Pangea VAR 2.000';
     font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
     transition: all .5s;
     font-size: 1.25em;
@@ -127,7 +128,7 @@ header {
 }
 
 .arg{
-  font-family: "pangea";
+  font-family: "Pangea VAR 2.000";
   text-align: center;
   font-size: 5vw;
   position: relative;
@@ -155,14 +156,14 @@ header {
     font-size: 2em;
     }
     .math{
-      font-family: "antarctica", sans-serif;
+      font-family: "Antarctica Beta VAR", sans-serif;
       font-variation-settings: "wdth" 175, "wght" 700, "CNTR" 0;
       font-size: 1.25em;
       margin: 0 0.25em;
       width: 1.5em;
       height: 1.5em;
       display: flex;
-      border:solid #111720 .15em;
+      border:solid #35465e .15em;
       align-items: flex-end;
       justify-content: center;
       line-height: 1.3;
@@ -171,7 +172,7 @@ header {
       background-color: aliceblue;
     }
     .box {
-      border:solid #111720 .175em;
+      border:solid #35465e .175em;
       padding: 1em 0;
       
       
@@ -202,7 +203,7 @@ header {
           }
         }
         .col:nth-of-type(3) {
-          font-family: "antarctica", sans-serif;
+          font-family: "Antarctica Beta VAR", sans-serif;
           font-variation-settings: "wdth" 7, "wght" 350, "CNTR" 0;
           font-size: 3em;
           transform: translate(0px, 0.1em);
@@ -237,7 +238,7 @@ header {
           &:nth-of-type(1) {
             font-variation-settings: "wght" 600, "ital" 0, "XTDR" 50, "APRT" 100, "SPAC" 8, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
             span {
-              font-family: "antarctica", sans-serif;
+              font-family: "Antarctica Beta VAR", sans-serif;
               font-variation-settings: "wdth" 200, "wght" 900, "CNTR" 0;
             }
           }
@@ -286,19 +287,23 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-family: "pangea";
+      font-family: "Pangea VAR 2.000";
       font-size: 1.15em;
       @media (min-width: 1024px) {
         width: 50%;
+        padding: 0;
       }
       font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
       h2 {
-        font-family: "pangea";
+        font-family: "Pangea VAR 2.000";
         font-variation-settings: "wght" 600, "ital" 0, "XTDR" 50, "APRT" 100, "SPAC" 8, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
         font-size: 1.15em;
         text-align: center;
         @media (min-width: 1024px) {
           text-align:left;
+          padding: 0;
+          margin: 0em !important;
+          
         }
     }
     }
@@ -386,22 +391,11 @@ video {
 
 .intro {
 display: flex;
-
+flex-wrap: wrap;
 align-items:stretch;
 position: relative;
 width: 100%;
-flex-direction: column-reverse;
-&::before{
-  content: '';
-  display: block;
-  background-color: #111720;
-  width: 100%;
-  height: 100%;
-  position:absolute;
-  top:0;
-  left:0;
-  z-index: -1;
-}
+
 picture {
 display: flex;
 }
@@ -454,12 +448,37 @@ display: flex;
 display: flex;
 align-items: center;
 flex-direction: column;
-@media (min-width: 1024px) {
-  width: 33%;}
+align-self: center;
 
+@media (min-width: 1024px) {
+  width: 50%;}
+}
+.top{
+  align-self:baseline;
+  h2 {
+    font-family: "Antarctica Beta VAR", sans-serif;
+    font-variation-settings: "wdth" 5, "wght" 525, "CNTR" 0;
+    font-size: 6vw;
+    background: rgb(203, 227, 200);
+    background: -moz-linear-gradient(180deg, rgb(203, 227, 200) 0%, rgb(144, 199, 192) 50%, rgb(119, 188, 190) 100%);
+    background: -webkit-linear-gradient(180deg, rgb(203, 227, 200) 0%, rgb(144, 199, 192) 50%, rgb(119, 188, 190) 100%);
+    background: linear-gradient(180deg, rgb(203, 227, 200) 0%, rgb(144, 199, 192) 50%, rgb(119, 188, 190) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbe3c8",endColorstr="#77bcbe",GradientType=1);
+    color: #FFF;
+    text-transform: uppercase;
+    .zero{font-variation-settings: "wdth" 115, "wght" 830, "CNTR" 0;}
+    padding:.25em .5em;
+    margin:auto 0 ;
+
+    margin: 0em !important;
+}
+  @media (min-width: 1024px) {
+    width: 100%;
+    margin-bottom: -10%;}
+   
 }
 .letters{
-  font-family: "antarctica", sans-serif;
+  font-family: "Antarctica Beta VAR", sans-serif;
   text-transform: uppercase;
   font-size: 12vw;
   text-align: center;
@@ -468,7 +487,7 @@ flex-direction: column;
   letter-spacing: .0025em;
   color:#a8cdee;
   @media (min-width: 1024px) {
-    font-size: 4vw;
+    font-size: 6vw;
     top: 30%;
 
   }
@@ -590,14 +609,14 @@ display: flex;
 padding: 1.5em;
 width: 80%;
 margin: 0 auto;
-font-family: "pangea";
+font-family: "Pangea VAR 2.000";
   font-size: 1.15em;
   font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
   flex-direction: column;
   margin-top: 2em;
   margin-bottom: 5em;
   h2 {
-    font-family: "pangea";
+    font-family: "Pangea VAR 2.000";
     font-variation-settings: "wght" 600, "ital" 0, "XTDR" 50, "APRT" 100, "SPAC" 8, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
     font-size: 1.15em;
   }
@@ -621,7 +640,7 @@ font-family: "pangea";
   }
 
 footer {
-background-color: #111720;
+background-color: #35465e;
 display: flex;
 flex-wrap: wrap;
 color: #FFF;
@@ -632,9 +651,9 @@ position: relative;
   height:100%;
   left:-0.5vw;
   top: 0;
-  width: 130vw;
+  width: 101vw;
   z-index:-50;
-  background-color: #111720;
+  background-color: #35465e;
   display: block;
   @media (min-width: 1024px) {
     left: -10.5vw;
@@ -642,13 +661,14 @@ position: relative;
 }
 a {
   position: relative;
-  color:#111720;
+  color:#35465e;
   z-index: 1;
   text-align: center;
-  font-family: 'pangea';
+  font-family: 'Pangea VAR 2.000';
   font-variation-settings: "wght" 400, "ital" 0, "XTDR" 0, "APRT" 0, "SPAC" 27, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
   transition: all .5s;
   font-size: 1.25em;
+  margin: 0 auto;
   &:hover {
   font-variation-settings: "wght" 700, "ital" 0, "XTDR" 50, "APRT" 100, "SPAC" 0, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
   transition: all .5s;
@@ -677,22 +697,13 @@ a {
     border-radius: 4rem;
     border: solid white 0.1em;
   }
-  &:nth-of-type(1) {
-    color: #FFF;
-    &:before {
-      display: none;
-    }
-  }
-  &:nth-of-type(2) {
-    font-size: 1.5em;
-  }
-  margin: 2em auto;
+  
   @media (min-width: 1024px) {
-    margin: 0em auto 0em 0;
+    margin: 1em auto 0em auto;
   }
 }
-h2 {
-  font-family: "pangea";
+h2, h3 {
+  font-family: "Pangea VAR 2.000";
   font-variation-settings: "wght" 600, "ital" 0, "XTDR" 50, "APRT" 100, "SPAC" 8, "INKT" 0, "SS01" 1, "SS02" 1, "SS03" 1;
   font-size: 1.5em;
   padding: 1em 3em;
@@ -701,6 +712,12 @@ h2 {
   span {
     text-transform: capitalize;
   }
+}
+
+
+.horaire{
+  width: 60%;
+  margin: 0 20%;
 }
 .col {
   width: 100%;
@@ -752,3 +769,22 @@ h2 {
 }
 
   }
+
+  .argu{position: relative;
+  &::before{
+    content: '';
+    width: calc(100% + 5em);
+    height: calc(100% - 5em);
+    position: absolute;
+    left: -5em;
+    top:2.5em;
+  display: block;
+  background: rgb(203, 227, 200);
+    background: -moz-linear-gradient(180deg, rgb(203, 227, 200) 0%, rgb(144, 199, 192) 50%, rgb(119, 188, 190) 100%);
+    background: -webkit-linear-gradient(180deg, rgb(203, 227, 200) 0%, rgb(144, 199, 192) 50%, rgb(119, 188, 190) 100%);
+    background: linear-gradient(180deg, rgb(203, 227, 200) 0%, rgb(144, 199, 192) 50%, rgb(119, 188, 190) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbe3c8",endColorstr="#77bcbe",GradientType=1);
+    
+z-index: -1
+;
+}}

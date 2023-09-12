@@ -33,3 +33,43 @@
          url('./fonts/pangea.ttf')  format('truetype');
          font-display:auto;font-style:normal;font-stretch:normal; /* Safari, Android, iOS */
   }
+
+
+  @font-face {
+     font-family: 'Antarctica Beta VAR';
+     src: url('./fonts/AntarcticaBetaVAR-Regular.eot');
+     src: url('./fonts/AntarcticaBetaVAR-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/AntarcticaBetaVAR-Regular.woff2') format('woff2'),
+         url('./fonts/AntarcticaBetaVAR-Regular.woff') format('woff'),
+         url('./fonts/AntarcticaBetaVAR-Regular.ttf') format('truetype'),
+         url('./fonts/AntarcticaBetaVAR-Regular.svg#AntarcticaBetaVAR-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'Antarctica Beta VAR';
+     src: url('./fonts/AntarcticaBetaVAR-Regular_1.eot');
+     src: url('./fonts/AntarcticaBetaVAR-Regular_1.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/AntarcticaBetaVAR-Regular_1.woff2') format('woff2'),
+         url('./fonts/AntarcticaBetaVAR-Regular_1.woff') format('woff'),
+         url('./fonts/AntarcticaBetaVAR-Regular_1.ttf') format('truetype'),
+         url('./fonts/AntarcticaBetaVAR-Regular_1.svg#AntarcticaBetaVAR-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'Pangea VAR 2.000';
+     src: url('PangeaVAR2000.eot');
+     src: url('PangeaVAR2000.eot?#iefix') format('embedded-opentype'),
+         url('PangeaVAR2000.woff2') format('woff2'),
+         url('PangeaVAR2000.woff') format('woff'),
+         url('PangeaVAR2000.ttf') format('truetype'),
+         url('PangeaVAR2000.svg#PangeaVAR2.000') format('svg');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+ }

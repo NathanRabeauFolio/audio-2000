@@ -16,33 +16,19 @@ section: page
 </header>
 <section class="intro page-container">
 
-      <div class="mask">
-              {% image
-        "src/assets/img/mask.svg",
-        "",
-        "(min-width: 1024px) 50vw, 100vw",
-        "",
-        "eager"
-      %}
-      </div>
+      
+              <div class="col-intro top">
+    <h2><span style="color:#35465e">Nos expert se déplacent</span><br>pour vous faire entrendre la qualité à <span class="zero">0€</span></h2>
+        </div>
         <div class="col-intro">
     {{ global.logo | svg | safe }}
-  </div>
+        </div>
       <div class="col-intro">
 <div class="letters">
-<span class="l3">P</span><span class="l1">o</span><span class="l2">u</span><span class="l4">r</span><br>
-<span class="l4">T</span><span class="l2">o</span><span class="l1">u</span><span class="l3">s</span>
+<span class="l3" style="color:#77bcbe">P</span><span class="l1" style="color:#83c1bf">o</span><span class="l2" style="color:#aad3c4">u</span><span class="l4" style="color:#cae3c8">r</span><br>
+<span class="l4" style="color:#77bcbe">T</span><span class="l2" style="color:#83c1bf">o</span><span class="l1" style="color:#aad3c4">u</span><span class="l3" style="color:#cae3c8">s</span>
 </div>
-</div>
-        <div class="col-intro">
-              {% image
-        "src/assets/img/SANTE-LOGO.png",
-        "",
-        "(min-width: 1024px) 50vw, 100vw",
-        "",
-        ""
-      %}
-  </div>
+
 </section>
 <section class="page-container arg">
   <div class="date"><span>Vous avez un doute sur votre audition ?</span><br>
@@ -53,40 +39,72 @@ section: page
 <div class="cols">
   <div class="col">
       {% image
-        "src/assets/img/redac01.jpg",
+        "src/assets/img/AUDIO2000-01.jpg",
         "",
         "(min-width: 1024px) 50vw, 100vw",
         "",
         "eager"
       %}
   </div>
-  <div class="col">
-    <h2>Junior le pack protection</h2>
-    <p>Votre enfant vit des journées bien remplies : lecture, jeux vidéos, sport… et sollicite sa vue en permanence. Pour protéger ses yeux, bénéficiez des conseils de votre opticien et choisissez des lunettes adaptées à ses activités avec le pack protection Junior</p>
+  <div class="col argu">
+    <h2 style="
+    padding-bottom: 1em;
+">Confort auditif essai gratuit*</h2>
+    <p style="
+    margin-bottom:0">Essayez vos aides auditives pendant 30 jours</p>
+    <div style="
+    margin-left:15%"><h2>+</h2></div>
+    <p style="
+    margin-bottom:0">Testez votre audition</p>
+    <div style="
+    margin-left:15%"><h2>+</h2></div>
+    <p style="
+    margin-bottom:0">Conseils personnalisés délivrés par nos audioprothésistes diplômés</p>
+
   </div>
 </div>
 
 </section>
 <footer class="page-container">
-   <div class="mask">
-              {% image
-        "src/assets/img/mask2.svg",
+   
+<h2>Votre centre AUDIO 2000 et votre audioprothésiste<br>sont prêts à vous accueillir pour un rendez-vous audition :</h2>
+<div class="col">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10492.651655989275!2d2.3405578!3d48.8932323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e5911a14237%3A0xc3afbc9ac731be28!2sAudio%202000%20Audition%20Rameau%20-%20Audioproth%C3%A9siste%20Paris%2018!5e0!3m2!1sfr!2sfr!4v1694518201427!5m2!1sfr!2sfr"
+width="100%"
+height="100%"
+style="border:0;"
+allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+<div class="col" style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+">
+   {% image
+        "src/assets/img/optic2000.svg",
         "",
         "(min-width: 1024px) 50vw, 100vw",
         "",
         "eager"
       %}
-      </div>
-<h2>Votre centre AUDIO 2000 et votre audioprothésiste<br>sont prêts à vous accueillir pour un rendez-vous audition :</h2>
-<div class="col">
-  <iframe>
+
+  <p>Centre AUDIO 2000 – Audition RAMEAU<br>110 bis Rue Ordener, 75018 PARIS</p>
+
   
-</iframe>
-</div>
-<div class="col">
-  <p></p>
+  <a href="tel:+33142587781"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;01 42 58 77 81</a>
+  <h2>horaire</h2>
+      {% image
+        "src/assets/img/horaire.png",
+        "",
+        "(min-width: 1024px) 50vw, 100vw",
+        "horaire",
+        "eager"
+      %}
+  <a href="https://www.google.com/maps/dir//Audio+2000+Audition+Rameau+-+Audioproth%C3%A9siste+Paris+18,+110+bis+Rue+Ordener,+75018+Paris/@48.8932323,2.3405578,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47e66e5911a14237:0xc3afbc9ac731be28!2m2!1d2.340539!2d48.893171!3e0?entry=ttu"><i class="fa fa-map-signs" aria-hidden="true"></i></i> Me rendre au centre</a>
   <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
-  <a href=""><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Je profite de l'offre</a>
+  <a href=""><i class="fa fa-handshake-o" aria-hidden="true"></i> tester mon audition</a>
 </div>
 <p class="legal">
  <b>Mentions légales</b> :<br>
