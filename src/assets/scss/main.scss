@@ -22,12 +22,14 @@
 /* Fonts */
 
 @font-face {
+    font-display:auto;
     font-family: 'antarctica';
     src: url('./fonts/antarctica.woff2') format('woff2'), /* Super Modern Browsers */
          url('./fonts/antarctica.ttf')  format('truetype');
          font-display:auto;font-style:normal;font-stretch:normal; /* Safari, Android, iOS */
   }
   @font-face {
+    font-display:auto;
     font-family: 'pangea';
     src: url('./fonts/pangea.woff2') format('woff2'), /* Super Modern Browsers */
          url('./fonts/pangea.ttf')  format('truetype');
@@ -36,19 +38,21 @@
 
 
   @font-face {
+    font-display:auto;
      font-family: 'Antarctica Beta VAR';
-     src: url('./fonts/AntarcticaBetaVAR-Regular.eot');
-     src: url('./fonts/AntarcticaBetaVAR-Regular.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/AntarcticaBetaVAR-Regular.woff2') format('woff2'),
-         url('./fonts/AntarcticaBetaVAR-Regular.woff') format('woff'),
-         url('./fonts/AntarcticaBetaVAR-Regular.ttf') format('truetype'),
-         url('./fonts/AntarcticaBetaVAR-Regular.svg#AntarcticaBetaVAR-Regular') format('svg');
+     src: url('../fonts/AntarcticaBetaVAR-Regular.eot');
+     src: url('../fonts/AntarcticaBetaVAR-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AntarcticaBetaVAR-Regular.woff2') format('woff2'),
+         url('../fonts/AntarcticaBetaVAR-Regular.woff') format('woff'),
+         url('../fonts/AntarcticaBetaVAR-Regular.ttf') format('truetype'),
+         url('../fonts/AntarcticaBetaVAR-Regular.svg#AntarcticaBetaVAR-Regular') format('svg');
      font-weight: normal;
      font-style: normal;
      font-display: swap;
  }
  
  @font-face {
+    font-display:auto;
      font-family: 'Antarctica Beta VAR';
      src: url('./fonts/AntarcticaBetaVAR-Regular_1.eot');
      src: url('./fonts/AntarcticaBetaVAR-Regular_1.eot?#iefix') format('embedded-opentype'),
@@ -62,13 +66,14 @@
  }
  
  @font-face {
+    font-display:auto;
      font-family: 'Pangea VAR 2.000';
-     src: url('PangeaVAR2000.eot');
-     src: url('PangeaVAR2000.eot?#iefix') format('embedded-opentype'),
-         url('PangeaVAR2000.woff2') format('woff2'),
-         url('PangeaVAR2000.woff') format('woff'),
-         url('PangeaVAR2000.ttf') format('truetype'),
-         url('PangeaVAR2000.svg#PangeaVAR2.000') format('svg');
+     src: url('../fonts/PangeaVAR2000.eot');
+     src: url('../fonts/PangeaVAR2000.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PangeaVAR2000.woff2') format('woff2'),
+         url('../fonts/PangeaVAR2000.woff') format('woff'),
+         url('../fonts/PangeaVAR2000.ttf') format('truetype'),
+         url('../fonts/PangeaVAR2000.svg#PangeaVAR2.000') format('svg');
      font-weight: 300;
      font-style: normal;
      font-display: swap;
