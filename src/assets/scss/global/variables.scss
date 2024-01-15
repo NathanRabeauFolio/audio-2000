@@ -23,7 +23,7 @@
   --font-family-heading: var(--font-family-base);
 
   /* Sizes */
-  --site-width: 80%;
+  --site-width: calc(100% - 10em);
   --header-height: 66px;
   --header-height-lg: 76px;
 

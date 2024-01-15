@@ -23,16 +23,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   position: relative;
-  &::before {
-    content: '';
-    width: 100%;
-    height: 86vh;
-    background-color: #35465e;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-  }
+
 }
 header {
   background-color: #35465e;
@@ -40,11 +31,23 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem 0rem;
+  padding: 2rem 0 0rem;
       @media (min-width: 1024px) {
          padding: 5rem 0 0rem;
       }
-
+      &::before{
+        position: absolute;
+        left: 0em;
+        top: 0;
+        content: "";
+        width: 100%;
+        height: 20vh;
+        background-color: #35465e;
+        z-index: -1;
+        @media (min-width: 1024px) {
+          width: 100%;
+          left: 0;}
+      }
   .col {
     width:100%;
     display: flex;
@@ -644,19 +647,19 @@ display: flex;
 flex-wrap: wrap;
 color: #FFF;
 position: relative;
-&::before {
+&::before{
   position: absolute;
-  content: '';
-  height:100%;
-  left:-0.5vw;
+  left: 0em;
   top: 0;
-  width: 101vw;
-  z-index:-50;
+  content: "";
+  width: 100%;
+  height: 100%;
   background-color: #35465e;
-  display: block;
+  z-index: -1;
   @media (min-width: 1024px) {
-    left: -10.5vw;
-  }
+    width: calc(100% + 10em)
+    ;
+    left: -5em;}
 }
 p{font-size: 1.25rem;}
 a {
@@ -781,4 +784,13 @@ h2, h3 {
   background-size: contain;
   background-position: bottom;
   
+}
+
+.page-container{
+  width: 100%!important;
+}
+section{padding:0 0em;
+  @media (min-width: 1024px) {
+    padding:0 5em;
+  }
 }
