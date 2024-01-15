@@ -88,8 +88,11 @@ Un bilan auditif gratuit en centre AUDIO 2000 peut vous êtes proposé pour fair
    
 <h2 style="font-size:1.5em;margin-top: 1.5em;margin-bottom: 1em">Votre centre AUDIO 2000 et votre audioprothésiste<br>sont prêts à vous accueillir pour un rendez-vous audition :</h2>
 <div class="col">
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU-bcMO9qToKzVXm7q8L7Quvxhh2VhEy0"></script>
-<div id="map"></div>
+  <div id="map"></div>
+
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyCU-bcMO9qToKzVXm7q8L7Quvxhh2VhEy0", v: "weekly"});</script>
 </div>
 <div class="col" style="
     display: flex;
@@ -122,119 +125,79 @@ Un bilan auditif gratuit en centre AUDIO 2000 peut vous êtes proposé pour fair
 </div>
 
 <script>
-jQuery(function() {
-	if ($("#map").length) {
-		initMap();
-	}
-});
+  /**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+async function initMap() {
+  // Request needed libraries.
+  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+    "marker",
+  );
+  const map = new Map(document.getElementById("map"), {
+    zoom: 12,
+    center: { lat: 34.84555, lng: -111.8035 },
+    mapId: "4504f8b37365c3d0",
+  });
+  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
+  // receives the initial focus when tab is pressed. Use arrow keys to
+  // move between markers; press tab again to cycle through the map controls.
+  const tourStops = [
+    {
+      position: { lat: 34.8791806, lng: -111.8265049 },
+      title: "Boynton Pass",
+    },
+    {
+      position: { lat: 34.8559195, lng: -111.7988186 },
+      title: "Airport Mesa",
+    },
+    {
+      position: { lat: 34.832149, lng: -111.7695277 },
+      title: "Chapel of the Holy Cross",
+    },
+    {
+      position: { lat: 34.823736, lng: -111.8001857 },
+      title: "Red Rock Crossing",
+    },
+    {
+      position: { lat: 34.800326, lng: -111.7665047 },
+      title: "Bell Rock",
+    },
+  ];
+  // Create an info window to share between markers.
+  const infoWindow = new InfoWindow();
 
-//initMap
-function initMap() {
-	var locations = [
-		[
-			"Locatie title 0",
-			52.083949,
-			4.524197,
-			"https://maps.google.com/mapfiles/ms/micons/blue.png",
-			"city 0",
-			"Address 0",
-			"(071)|123|45|67"
-		],
-		[
-			"Locatie title 1",
-			52.147173,
-			4.470745,
-			"http://cdn.leafletjs.com/leaflet-0.6.4/images/marker-icon.png",
-			"city 1",
-			"Address 1",
-			"+38/(071)/123/45/67"
-		],
-		[
-			"Locatie title 2",
-			52.166245,
-			4.51764,
-			"https://maps.google.com/mapfiles/ms/micons/blue.png",
-			"city 2",
-			"",
-			"+38/(071)/123/45/67"
-		],
-		[
-			"Locatie title 3",
-			52.159244,
-			4.572521,
-			"https://www.mapsmarker.com/wp-content/plugins/leaflet-maps-marker-pro/leaflet-dist/images/marker.png",
-			"city 3",
-			"",
-			"+38/(071)/123/45/67"
-		],
-		[
-			"Locatie title 4",
-			52.126607,
-			4.619146,
-			"https://maps.google.com/mapfiles/ms/micons/blue.png",
-			"",
-			"Address 4",
-			"+38 (071) 123-45-67"
-		],
-		[
-			"Locatie title 5",
-			52.159393,
-			4.673784,
-			"https://maps.google.com/mapfiles/ms/micons/blue.png",
-			"City 5",
-			"Address 5",
-			"(071) 123 45 67"
-		]
-	];
-	var map = new google.maps.Map(document.getElementById("map"), {
-		zoom: 11,
-		center: new google.maps.LatLng(52.140088, 4.482347),
-		mapTypeId: google.maps.MapTypeId.ROADMAP
-	});
-	var infoWindow = new google.maps.InfoWindow();
-	var marker, i;
-	for (i = 0; i < locations.length; i++) {
-		var lat = locations[i][1];
-		var lng = locations[i][2];
-		var pin = locations[i][3];
-		marker = new google.maps.Marker({
-			position: new google.maps.LatLng(lat, lng),
-			animation: google.maps.Animation.DROP,
-			icon: pin,
-			map: map
-		});
-		google.maps.event.addListener(marker, "click", (function(marker, i) {
-			var title = (locations[i][0] !== undefined) ? locations[i][0] : '';
-			var city = (locations[i][4] !== undefined) ? locations[i][4] : '';
-			var address = (locations[i][5] !== undefined) ? locations[i][5] : '';
-			var tel = (locations[i][6] !== undefined) ? locations[i][6] : '';
-			var telCall = tel.replace(/[^+0-9]/g,'');
-			// console.log(tel2);
-			var html = ( (title !== '') ? "<h3>" + title + "</h3>" : title ) + ( (city !== '') ? "<h4>" + city + "</h4>" : city ) + ( (address !== '') ? "<p>" + address + "</p>" : address ) + ( (tel !== '') ? "<a href=tel:" + telCall + ">" + tel + "</a>" : tel ) ;
-	
-			return function() {
-				infoWindow.setOptions({
-					content:html
-				});					
-				infoWindow.open(map, marker);
-			};
-			})(marker, i)
-		);
-	}
+  // Create the markers.
+  tourStops.forEach(({ position, title }, i) => {
+    const pin = new PinElement({
+      glyph: `${i + 1}`,
+    });
+    const marker = new AdvancedMarkerElement({
+      position,
+      map,
+      title: `${i + 1}. ${title}`,
+      content: pin.element,
+    });
+
+    // Add a click listener for each marker, and set up the info window.
+    marker.addListener("click", ({ domEvent, latLng }) => {
+      const { target } = domEvent;
+
+      infoWindow.close();
+      infoWindow.setContent(marker.title);
+      infoWindow.open(marker.map, marker);
+    });
+  });
 }
-</script>
+
+initMap();
+
+  </script>
 
 <style>
- #map{
-	width:100%;
-	height:100vh;
+  #map {
+  height: 100%;
 }
 </style>
-
-<script>
-  (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-    key: "AIzaSyCU-bcMO9qToKzVXm7q8L7Quvxhh2VhEy0",
-    // Add other bootstrap parameters as needed, using camel case.
-    // Use the 'v' parameter to indicate the version to load (alpha, beta, weekly, etc.)
-  });
-</script>
