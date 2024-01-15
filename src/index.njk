@@ -137,8 +137,8 @@ async function initMap() {
     "marker",
   );
   const map = new Map(document.getElementById("map"), {
-    zoom: 12,
-    center: { lat: 34.84555, lng: -111.8035 },
+    zoom: 10,
+    center: { lat: 46.244751, lng: -0.793403 },
     mapId: "4504f8b37365c3d0",
   });
   // Set LatLng and title text for the markers. The first marker (Boynton Pass)
@@ -146,24 +146,24 @@ async function initMap() {
   // move between markers; press tab again to cycle through the map controls.
   const tourStops = [
     {
-      position: { lat: 34.8791806, lng: -111.8265049 },
-      title: "Boynton Pass",
+      position: { lat: 46.303705, lng: -0.487333 },
+      title: "Audio 2000 Bessines",
     },
     {
-      position: { lat: 34.8559195, lng: -111.7988186 },
-      title: "Airport Mesa",
+      position: { lat: 46.18519, lng: -1.118828 },
+      title: "audio 2000 Puilboreau",
     },
     {
-      position: { lat: 34.832149, lng: -111.7695277 },
-      title: "Chapel of the Holy Cross",
+      position: { lat: 46.110375, lng: -0.741489 },
+      title: "audio 2000 Surgères",
     },
     {
-      position: { lat: 34.823736, lng: -111.8001857 },
-      title: "Red Rock Crossing",
+      position: { lat: 46.160558, lng: -1.150342 },
+      title: "audio 2000 La Rochelle",
     },
     {
-      position: { lat: 34.800326, lng: -111.7665047 },
-      title: "Bell Rock",
+      position: { lat: 46.33805, lng: -0.409736 },
+      title: "audio 2000 La Rochelle",
     },
   ];
   // Create an info window to share between markers.
@@ -177,7 +177,7 @@ async function initMap() {
     const marker = new AdvancedMarkerElement({
       position,
       map,
-      title: `${i + 1}. ${title}`,
+      title: `${title}`,
       content: pin.element,
     });
 
@@ -198,6 +198,6 @@ initMap();
 
 <style>
   #map {
-  height: 100%;
+  height: 80vh;
 }
 </style>
