@@ -41,11 +41,7 @@ async function initMap() {
   const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
     "marker",
   );
-    const icons = {
-    audio: {
-      icon: "https://i.ibb.co/8s1bS3w/audio-mini.png",
-    
-  };
+   
   const map = new Map(document.getElementById("map"), {
     zoom: 10,
     center: { lat: 46.244751, lng: -0.793403 },
@@ -83,7 +79,7 @@ async function initMap() {
   // Create the markers.
   tourStops.forEach(({ position, title }, i) => {
     const pin = new PinElement({
-      glyph: ``,
+      glyph: `${i + 1}`,
     });
     const marker = new AdvancedMarkerElement({
       position,
