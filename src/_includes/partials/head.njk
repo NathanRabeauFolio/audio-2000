@@ -41,6 +41,11 @@ async function initMap() {
   const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
     "marker",
   );
+    const icons = {
+    audio: {
+      icon: "https://i.ibb.co/8s1bS3w/audio-mini.png",
+    
+  };
   const map = new Map(document.getElementById("map"), {
     zoom: 10,
     center: { lat: 46.244751, lng: -0.793403 },
@@ -53,6 +58,7 @@ async function initMap() {
     {
       position: { lat: 46.303705, lng: -0.487333 },
       title: "Audio 2000 Bessines",
+      type: "audio",
     },
     {
       position: { lat: 46.18519, lng: -1.118828 },
