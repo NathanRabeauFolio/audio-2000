@@ -775,11 +775,10 @@ h2, h3 {
   
 .GMAMP-maps-pin-view{
   svg{opacity: 0;
-    &:only-child{opacity: 0;}}
-  background-color:blue ;
+    &:nth-child(){opacity: 0;}}
   background-image: url(https://i.ibb.co/8s1bS3w/audio-mini.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   
 }
