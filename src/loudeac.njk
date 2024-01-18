@@ -1,6 +1,7 @@
 ---
 layout: 'base.njk'
 section: page
+permalink: "loudeac/"
 ---
 <script>
   /**
@@ -18,7 +19,7 @@ async function initMap() {
   
   const map = new Map(document.getElementById("map"), {
     zoom: 10,
-    center: { lat: 46.244751, lng: -0.793403 },
+    center: { lat: 48.1736438249821, lng: -2.75423526786172 },
     mapId: "4504f8b37365c3d0",
   });
   // Set LatLng and title text for the markers. The first marker (Boynton Pass)
@@ -26,24 +27,8 @@ async function initMap() {
   // move between markers; press tab again to cycle through the map controls.
   const tourStops = [
     {
-      position: { lat: 46.303705, lng: -0.487333 },
-      title: "<b>audio 2000 Bessines</b><br><br>21 route de la Rochelle<br>79000 Bessines",
-    },
-    {
-      position: { lat: 46.18519, lng: -1.118828 },
-      title: "<b>audio 2000 Puilboreau</b><br><br>Galerie Centre Commercial Hyper U<br>17138 Puilboreau",
-    },
-    {
-      position: { lat: 46.110375, lng: -0.741489 },
-      title: "<b>audio 2000 Surgères</b><br><br>Centre commercial Leclerc,<br>rue Jean-Philippe Rameau<br>17700 Surgères",
-    },
-    {
-      position: { lat: 46.160558, lng: -1.150342 },
-      title: "<b>audio 2000 La Rochelle</b><br><br>33 Bis Rue des Mercier<br>17000 La Rochelle",
-    },
-    {
-      position: { lat: 46.33805, lng: -0.409736 },
-      title: "<b>audio 2000 La Rochelle</b><br><br>Centre Commercial LECLERC,<br>580 Avenue de Paris<br>79000 Niort",
+      position: { lat: 48.1736438249821, lng: -2.75423526786172 },
+      title: "<b>audio 2000 Loudéac</b><br><br>33 Rue de Pontivy<br>22600 Loudéac",
     },
   ];
   // Create an info window to share between markers.
@@ -168,12 +153,8 @@ initMap();
     justify-content: space-evenly;
 ">
 <p>
-  <b>audio 2000 Bessines</b><br>21 route de la Rochelle<br>79000 Bessines<br><br>
-  <b>audio 2000 Puilboreau</b><br>Galerie Centre Commercial Hyper U<br>17138 Puilboreau<br><br>
-  <b>audio 2000 Surgères</b><br>Centre commercial Leclerc,<br>rue Jean-Philippe Rameau<br>17700 Surgères<br><br>
-  <b>audio 2000 La Rochelle</b><br>33 Bis Rue des Mercier<br>17000 La Rochelle<br><br>
-  <b>audio 2000 La Rochelle</b><br>Centre Commercial LECLERC,<br>580 Avenue de Paris<br>79000 Niort<br><br>
-
+  <b>audio 2000 Loudéac</b><br>33 Rue de Pontivy<br>22600 Loudéac
+  
 </p>
   
   <a href="tel:+33000000000"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Appeler mon Audioprothésiste</a>
