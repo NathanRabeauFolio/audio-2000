@@ -439,27 +439,27 @@ align-self: center;
   margin-left:5em;
   margin-bottom: 2em;
   @media (min-width: 1024px) {
-    margin-right:-2em;
-    margin-left:2em;
-    width: 30%;}
+    margin-right: 2em;
+    margin-left: 12em;
+    width: 16%;}
 }
 &:nth-of-type(3){
   margin-right:2em;
   margin-left: 2em;
   margin-bottom: 2em;
   @media (min-width: 1024px) {
-    margin-right:2em;
-    margin-left:2em;
-    width: 30%;}
+    margin-right: 2em;
+    margin-left: 2em;
+    width: 20%;}
 }
 &:nth-of-type(4){
   margin-right:5em;
   margin-left:5em;
   margin-bottom: 2em;
   @media (min-width: 1024px) {
-    margin-right:2em;
-    margin-left:-2em;
-    width: 30%;}
+    margin-right: 12em;
+    margin-left: 2em;
+    width: 16%;}
 }
 
 @media (min-width: 1024px) {
@@ -475,8 +475,8 @@ background: -webkit-linear-gradient(0deg, rgba(120,195,191,1) 0%, rgba(194,222,1
 background: linear-gradient(0deg, rgba(120,195,191,1) 0%, rgba(194,222,199,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#78c3bf",endColorstr="#c2dec7",GradientType=1);
   @media (min-width: 1024px) {
-    width: 100%;
-    margin-bottom: -5%;}
+    width: 66%;
+    margin: 0 auto -1.5%;}
    
 }
 .letters{
