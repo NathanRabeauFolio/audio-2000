@@ -796,3 +796,12 @@ section{padding:0 0em;
   }
 }
 
+#map{margin: 3rem;
+  @media (min-width: 1024px) {
+    margin: 0rem;
+  }}
+
+  .legal{margin: 3rem;
+    @media (min-width: 1024px) {
+      margin: 0rem;
+    }}
