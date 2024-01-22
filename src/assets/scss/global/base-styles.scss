@@ -88,6 +88,7 @@ header {
     }
   }
   a {
+    margin-bottom:3rem;
     position: relative;
     color:#35465e!important;
     z-index: 1;
@@ -439,8 +440,8 @@ align-self: center;
   margin-left:5em;
   margin-bottom: 2em;
   @media (min-width: 1024px) {
-    margin-right: 2em;
-    margin-left: 12em;
+    margin-right: 7%;
+    margin-left: 7%;
     width: 16%;}
 }
 &:nth-of-type(3){
@@ -448,8 +449,8 @@ align-self: center;
   margin-left: 2em;
   margin-bottom: 2em;
   @media (min-width: 1024px) {
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: 7%;
+    margin-left: 7%;
     width: 20%;}
 }
 &:nth-of-type(4){
@@ -457,8 +458,8 @@ align-self: center;
   margin-left:5em;
   margin-bottom: 2em;
   @media (min-width: 1024px) {
-    margin-right: 12em;
-    margin-left: 2em;
+    margin-right: 7%;
+    margin-left: 7%;
     width: 16%;}
 }
 
