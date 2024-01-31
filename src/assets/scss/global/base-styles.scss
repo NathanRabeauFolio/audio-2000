@@ -815,6 +815,8 @@ section{padding:0 0em;
 
     .argu picture {width: 100%;
       overflow-x: clip;
+      margin-top:25%;
+      @media(min-width: 1024px){margin-top:0;}
       img{transform: scale(1.5);
         @media (min-width: 1024px) {
           transform: scale(1);
